@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e bordas sejam incluídos na largura e altura dos elementos */
+}
+
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+#header {
+    overflow: hidden; /* Garante que o conteúdo flutuado seja contido dentro do header */
+    padding: 25px;
+    background: yellow;
+    text-align: center; /* Centraliza o texto que não está flutuado */
+}
+
+#logo {
+    float: left; /* Faz com que o logo fique à esquerda */
+}
+
+#logo img {
+    width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+}
+
+h1 {
+    margin: 0; /* Remove a margem do título */
+    line-height: 100px; /* Alinha verticalmente o título ao centro */
+}
+
+a, a:link, a:visited {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#container {
+    display: flex; /* Utiliza flexbox para o layout */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    gap: 20px; /* Espaço entre o main e o aside */
+    margin: 0 auto; /* Centraliza o container na página */
+}
+
+main {
+    color: rgb(8, 8, 8);
+    width: 720px; /* Largura do conteúdo principal */
+    background-color: yellow;
+    padding: 15px;
+}
+
+aside#sidebar {
+    width: 200px; /* Largura da área lateral */
+    max-height: 600px; /* Altura máxima da área lateral */
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+}
+
+h2 {
+    text-align: center;
+    margin: 15px 25px;
+    background: black;
+    width: 100%;
+    color: yellow;
+}
+
+p {
+    font-size: x-large;
+    margin: 15px 15px;
+}
+
+#foto-klopp, #honras, #current-team {
+    height: auto;
+    width: 100%;
+}
+
+footer {
+    background-color: yellow;
+    width: 720px; /* Largura igual ao main */
+    margin: 15px auto;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.contorno {
+    text-shadow: #000 1px -1px, #000 -1px 1px, #000 1px 1px, #000 -1px -1px;
+}
